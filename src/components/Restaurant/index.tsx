@@ -14,3 +14,5 @@ const Restaurant = ({ name, review, address, otherLocations, phone, website, lat
         </div>
     )
 }
+
+export default Restaurant;
