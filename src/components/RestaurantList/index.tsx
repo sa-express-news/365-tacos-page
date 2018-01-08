@@ -2,7 +2,11 @@ import * as React from 'react';
 import Restaurant from '../Restaurant';
 import { Restaurant as RestaurantProps } from '../../types';
 
-const RestaurantList = (restaurants: RestaurantProps[]) => {
+interface Props {
+    restaurants: RestaurantProps[];
+}
+
+const RestaurantList = ({ restaurants }: Props) => {
     const components = restaurants.map((restaurantData: RestaurantProps, index: number) => {
         return <Restaurant
             name={restaurantData.name}
