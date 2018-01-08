@@ -1,3 +1,13 @@
+export interface AppState {
+    restaurants: Restaurant[];
+    location: {
+        latitude: number;
+        longitude: number;
+    };
+    activeFilter: String;
+    currentSearch: String;
+}
+
 export interface Restaurant {
     name: string;
     review: string;
