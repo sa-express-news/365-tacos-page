@@ -1,0 +1,2 @@
+export const SET_SEARCH_TERM = 'SET_SEARCH_TERM';
+export type SET_SEARCH_TERM = typeof SET_SEARCH_TERM;
