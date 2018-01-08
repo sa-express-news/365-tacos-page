@@ -1,11 +1,13 @@
 export interface AppState {
     restaurants: Restaurant[];
-    location: {
-        latitude: number;
-        longitude: number;
-    };
-    activeFilter: String;
-    currentSearch: String;
+    location: LatLong;
+    activeFilter: string;
+    currentSearch: string;
+}
+
+export interface LatLong {
+    latitude: number;
+    longitude: number;
 }
 
 export interface Restaurant {
