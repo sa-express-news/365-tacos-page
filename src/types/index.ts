@@ -21,3 +21,10 @@ export interface Restaurant {
     longitude?: number;
     image: string;
 }
+
+export interface ControlledInput {
+    value: string;
+    onChange?: (Function);
+    name?: string;
+    placeholder?: string;
+}
