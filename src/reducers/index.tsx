@@ -20,10 +20,16 @@ export const currentSearch = (action: actions.SetSearchTerm): string => {
     else return '';
 }
 
+export const location = (action: actions.SetLocation): types.LatLong => {
+    return action.location;
+}
+
 export const tacoApp = (state: types.AppState = initialState, action: actions.Action): types.AppState => {
     switch (action.type) {
         case constants.SET_SEARCH_TERM:
-            return Object.assign({}, state, { currentSearch: currentSearch(action as actions.SetSearchTerm) })
+            return Object.assign({}, state, { currentSearch: currentSearch(action as actions.SetSearchTerm) });
+        case constants.SET_LOCATION:
+            return Object.assign({}, state, { location: location(action as actions.SetLocation) });
     }
     return state;
 }
