@@ -1,6 +1,6 @@
 export interface AppState {
     restaurants: Restaurant[];
-    location: LatLong;
+    location: LatLong | null;
     activeFilter: string;
     currentSearch: string;
 }

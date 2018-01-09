@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import RestaurantList from '../RestaurantList';
 import * as types from '../../types';
 
-const getVisibleRestaurants = (restaurants: types.Restaurant[], filter: string, location: types.LatLong): types.Restaurant[] => {
+const getVisibleRestaurants = (restaurants: types.Restaurant[], filter: string, location: types.LatLong | null): types.Restaurant[] => {
     return restaurants;
 }
 

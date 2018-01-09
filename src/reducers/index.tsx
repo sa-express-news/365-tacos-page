@@ -8,10 +8,7 @@ const restaurants: types.Restaurant[] = require('../tacos.json');
 
 export const initialState: types.AppState = {
     restaurants,
-    location: {
-        latitude: 0,
-        longitude: 0
-    },
+    location: null,
     activeFilter: 'SHOW_ALL',
     currentSearch: ''
 };
