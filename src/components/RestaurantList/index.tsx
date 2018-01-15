@@ -2,6 +2,8 @@ import * as React from 'react';
 import Restaurant from '../Restaurant';
 import { Restaurant as RestaurantProps } from '../../types';
 
+import './RestaurantList.css';
+
 interface Props {
     restaurants: RestaurantProps[];
 }
@@ -17,6 +19,7 @@ const RestaurantList = ({ restaurants }: Props) => {
             image={restaurantData.image}
             latitude={restaurantData.latitude}
             longitude={restaurantData.longitude}
+            distance={restaurantData.distance}
             key={index}
         />
     });
