@@ -1,4 +1,7 @@
-.RestaurantList{
-    display: flex;
-    flex-flow: row wrap;
+@media(min-width: 500px){
+    .RestaurantList{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 }
