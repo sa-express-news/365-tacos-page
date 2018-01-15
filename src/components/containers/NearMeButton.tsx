@@ -4,7 +4,11 @@ import { AppState } from '../../types';
 import { setLocation, SetLocation } from '../../actions';
 import { ChangeEvent } from 'react';
 
-const mapDispatchToProps = (dispatch: Dispatch<SetLocation>) => {
+export interface Props {
+    text: string;
+}
+
+const mapDispatchToProps = (dispatch: Dispatch<SetLocation>, { text }: Props) => {
     return {
         onClick: () => {
             if ("geolocation" in navigator) {
@@ -15,7 +19,8 @@ const mapDispatchToProps = (dispatch: Dispatch<SetLocation>) => {
             }
             else {
             }
-        }
+        },
+        text
     }
 }
 
