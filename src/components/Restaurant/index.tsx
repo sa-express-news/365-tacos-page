@@ -1,16 +1,27 @@
 import * as React from 'react';
 import { Restaurant as Props } from '../../types';
 
-const Restaurant = ({ name, review, address, otherLocations, phone, website, latitude, longitude, image }: Props) => {
+import { precisionRound } from '../../util';
+
+import './Restaurant.css';
+
+const Restaurant = ({ name, review, address, otherLocations, phone, website, latitude, longitude, image, distance }: Props) => {
     return (
         <div className="Restaurant">
             <a href={review} title={name}>
-                <img src={image} alt={name} />
+                <img src={image.replace('920x920', '500x500')} alt={name} />
             </a>
-            <h4>{name}</h4>
-            <p>{address}</p>
-            <p><a href={`tel:+1${phone}`}></a>{phone}</p>
-            <p>{website}</p>
+            <div className="info">
+                <h4>{name}</h4>
+                <p>{address}</p>
+                <p><a href={`tel:+1${phone}`}>{phone}</a></p>
+                {website !== 'None' &&
+                    <p><a href={website} title={name}>Website</a></p>
+                }
+                {distance &&
+                    <p>{precisionRound(distance * 0.621371, 1)} mi</p>
+                }
+            </div>
         </div>
     )
 }
