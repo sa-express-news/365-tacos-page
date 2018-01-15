@@ -4,9 +4,16 @@ import { AppState } from '../../types';
 import { setSearchTerm, SetSearchTerm } from '../../actions';
 import { ChangeEvent } from 'react';
 
-const mapStateToProps = (state: AppState) => ({
-    value: state.currentSearch
-});
+export interface Props {
+    placeholder: string;
+}
+
+const mapStateToProps = (state: AppState, {placeholder}: Props) => {
+    return {
+        value: state.currentSearch,
+        placeholder
+    }
+};
 
 const mapDispatchToProps = (dispatch: Dispatch<SetSearchTerm>) => {
     return {
