@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { tacoApp, initialState } from './reducers';
 import { AppState } from './types';
@@ -10,7 +11,7 @@ import App from './components/App/';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-const store = createStore(tacoApp, initialState);
+const store = createStore(tacoApp, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
