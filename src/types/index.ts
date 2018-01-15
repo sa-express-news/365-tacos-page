@@ -17,14 +17,20 @@ export interface Restaurant {
     otherLocations?: string;
     phone: string;
     website: string;
-    latitude?: number;
-    longitude?: number;
+    latitude: number;
+    longitude: number;
+    distance?: number;
     image: string;
 }
 
 export interface ControlledInput {
     value: string;
-    onChange?: (Function);
+    onChange?: Function;
     name?: string;
     placeholder?: string;
+}
+
+export interface Button {
+    text?: string;
+    onClick?: Function;
 }

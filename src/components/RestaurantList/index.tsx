@@ -15,6 +15,8 @@ const RestaurantList = ({ restaurants }: Props) => {
             phone={restaurantData.phone}
             website={restaurantData.website}
             image={restaurantData.image}
+            latitude={restaurantData.latitude}
+            longitude={restaurantData.longitude}
             key={index}
         />
     });
