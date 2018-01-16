@@ -1,3 +1,7 @@
+.AppHeader p{
+    margin: .5em 0;
+}
+
 /* @media(min-width: 1280px){
     .AppHeader{
         margin: 0 auto;

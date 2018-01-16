@@ -1,6 +1,18 @@
+.Restaurant{
+    font-size: 17px;
+}
+
 .Restaurant img{
     height: auto;
     width: 100%;
+}
+
+.Restaurant .info a{
+    color: inherit;
+}
+
+.Restaurant h4{
+    font-weight: bold;
 }
 
 .Restaurant h4, .Restaurant p{
