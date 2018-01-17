@@ -1,11 +1,16 @@
+.AppHeader h1{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
 .AppHeader p{
     margin: .5em 0;
 }
 
-/* @media(min-width: 1280px){
-    .AppHeader{
-        margin: 0 auto;
-        width: 80%;
-    }
+.AppHeader .input{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: .5em;
+    min-height: 35px;
 }
- */
