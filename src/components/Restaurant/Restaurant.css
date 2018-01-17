@@ -1,5 +1,9 @@
+div.info i {
+    font-size: 10px;
+}
 .Restaurant{
     font-size: 17px;
+    margin-bottom: 40px;
 }
 
 .Restaurant img{
@@ -23,11 +27,13 @@
 @media (min-width: 500px){
     .Restaurant{
         flex-basis: 45%;
+        margin-bottom: 15px;
     }
 }
 @media (min-width: 768px){
     .Restaurant{
         flex-basis: 30%;
+        margin-bottom: 30px;
     }
 }
 @media (min-width: 1024px){
