@@ -17,6 +17,6 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('365-tacos-list') as HTMLElement
 );
 registerServiceWorker();
