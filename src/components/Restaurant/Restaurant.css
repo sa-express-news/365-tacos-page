@@ -9,6 +9,7 @@
 
 .Restaurant .info a{
     color: inherit;
+    text-decoration: underline;
 }
 
 .Restaurant h4{
