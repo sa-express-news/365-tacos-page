@@ -8,7 +8,6 @@ import { AppState } from './types';
 
 import { Provider } from 'react-redux';
 import App from './components/App/';
-import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 const store = createStore(tacoApp, composeWithDevTools());
@@ -19,4 +18,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('365-tacos-list') as HTMLElement
 );
-registerServiceWorker();
