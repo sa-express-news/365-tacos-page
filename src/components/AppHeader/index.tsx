@@ -12,7 +12,7 @@ const AppHeader = () => {
             <p>In his 365 Days of Tacos series, Mike visted and reviewed a new taco joint daily throughout 2017. We've gathered the best of them: the restaurants Mike deemed "worth a drive." </p>
             <p>Search for your favorite, or click the "near me" button to see the high-quality tacos closest to you.</p>
             <div className="input">
-                <SearchInput placeholder='Search...' />
+                <SearchInput placeholder='🌮' />
                 <NearMeButton text="Near me" />
             </div>
         </div>
