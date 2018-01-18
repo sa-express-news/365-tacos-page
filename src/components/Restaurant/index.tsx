@@ -18,7 +18,7 @@ const Restaurant = ({ name, review, address, otherLocations, phone, website, lat
                 {/* {website !== 'None' &&
                     <p><a href={website} title={name}> <i className="fas fa-external-link-alt"></i> Website</a></p>
                 } */}
-                <p><a href={review} title={name}><i className="fas fa-pencil-alt"></i> Read our review</a></p>
+                <p><i className="fas fa-file-alt"></i> <a href={review} title={name}>Read our review</a></p>
                 {distance &&
                     <p>{precisionRound(distance * 0.621371, 1)} mi</p>
                 }
