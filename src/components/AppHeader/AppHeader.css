@@ -18,6 +18,10 @@
     margin-bottom: .5em;
     min-height: 35px;
 }
+
+.AppHeader .input *{
+    margin-top: .5em;
+}
 .AppHeader {
 	margin-bottom: 20px;
 }
