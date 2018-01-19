@@ -12,6 +12,11 @@
 	margin-bottom: 20px;
 }
 
+.AppHeader a{
+    color: inherit;
+    text-decoration: underline;
+}
+
 .AppHeader .input{
     display: flex;
     flex-flow: row wrap;
