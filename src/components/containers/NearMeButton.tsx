@@ -2,7 +2,6 @@ import { connect, Dispatch } from 'react-redux';
 import Button from '../Button';
 import { AppState } from '../../types';
 import { setLocation, SetLocation } from '../../actions';
-import { ChangeEvent } from 'react';
 
 export interface Props {
     text: string;
