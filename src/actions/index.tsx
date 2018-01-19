@@ -15,6 +15,10 @@ export interface SetLocation extends Action {
     location: LatLong;
 }
 
+export interface ToggleCredits extends Action {
+    type: constants.TOGGLE_CREDITS;
+}
+
 export const setSearchTerm = (term: string): SetSearchTerm => {
     return {
         type: constants.SET_SEARCH_TERM,
@@ -26,5 +30,11 @@ export const setLocation = (location: LatLong): SetLocation => {
     return {
         type: constants.SET_LOCATION,
         location
+    }
+}
+
+export const toggleCredits = (): ToggleCredits => {
+    return {
+        type: constants.TOGGLE_CREDITS
     }
 }
