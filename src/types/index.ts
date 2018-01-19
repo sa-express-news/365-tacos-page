@@ -3,6 +3,7 @@ export interface AppState {
     location: LatLong | null;
     activeFilter: string;
     currentSearch: string;
+    showCredits: boolean;
 }
 
 export interface LatLong {
@@ -33,4 +34,8 @@ export interface ControlledInput {
 export interface Button {
     text?: string;
     onClick?: Function;
+}
+
+export interface Credits {
+    show: boolean;
 }

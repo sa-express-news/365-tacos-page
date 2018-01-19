@@ -1,0 +1,15 @@
+.Credits{
+    margin-top: .5em;
+}
+
+.Credits div{
+  margin-bottom: .5em;  
+}
+
+.Credits .title{
+    font-weight: bold;
+}
+
+.Credits div p{
+    margin: 0;
+}
