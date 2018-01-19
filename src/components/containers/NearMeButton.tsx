@@ -15,6 +15,8 @@ const mapDispatchToProps = (dispatch: Dispatch<SetLocation>, { text }: Props) =>
                 navigator.geolocation.getCurrentPosition((position) => {
                     const { latitude, longitude } = position.coords;
                     dispatch(setLocation({ latitude, longitude }));
+                }, (error) => {
+                    console.log(`Geolocation error: ${error.code} ${error.message}`);
                 });
             }
             else {
