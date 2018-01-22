@@ -7,7 +7,7 @@ import VisibleCredits from '../containers/VisibleCredits';
 import './AppHeader.css';
 
 const AppHeader = () => {
-    const showNearMe = window.location.protocol.includes('https:') && navigator.geolocation;
+    const showNearMe = window.location.protocol.includes('https:') && navigator.geolocation && !isFacebookApp();
     return (
         <div className="AppHeader">
             <h1>The ones that were worth the drive</h1>
@@ -26,6 +26,11 @@ const AppHeader = () => {
             </div>
         </div>
     )
+}
+
+function isFacebookApp() {
+    const ua = navigator.userAgent || navigator.vendor;
+    return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
 }
 
 export default AppHeader;
