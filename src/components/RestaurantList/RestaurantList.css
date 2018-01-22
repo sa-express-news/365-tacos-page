@@ -5,9 +5,9 @@
         justify-content: space-between;
     }
 
-    .RestaurantList:after {
+    /* .RestaurantList:after {
         content: "";
         display: block;
         margin-left: 66%;
-    }
+    } */
 }
